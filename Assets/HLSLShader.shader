@@ -4,6 +4,7 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _MainNormal("NormalMap", 2D) = "bump"{}
         _BaseColor("Base Color", Color) = (1,1,1,1)
     }
         SubShader
@@ -22,6 +23,7 @@
                 {
                     float4 position : POSITION;
                     float2 uv : TEXCOORD0;
+                    float4 tangent : TEXCOORD1;
                     float3 normal : NORMAL;
                 };
 
@@ -30,6 +32,7 @@
                     float4 position : SV_POSITION;
                     float2 uv : TEXCOORD0;
                     float3 normal : NORMAL;
+                    float4 tangent : TEXCOORD1;
                     float3 world_position : TEXCOORD2;
                 };
 
@@ -46,16 +49,25 @@
                         o.position = UnityObjectToClipPos(i.vertex);
                         o.normal   = UnityObjectToWorldNormal(i.normal);
                         o.uv = float4(i.texcoord.xy, 0.0f, 0.0f);
+                        o.tangent = i.tangent;
                         o.world_position = mul(unity_ObjectToWorld, i.vertex).xyz;
                         return o;
                    }
                    sampler2D _MainTex;
+                   sampler2D _MainNormal;
                 
                 float4 _BaseColor;
 
                 float4 frag(VertexOutput i) : SV_Target
                 {
                     float4 baseTex = tex2D(_MainTex, i.uv);
+                    float3 baseNormal = UnpackNormal(tex2D(_MainNormal, i.uv));
+                    baseNormal = float3(baseNormal.x, -baseNormal.y, baseNormal.z);
+                    //normal map
+
+                    float3 byNormal = cross(i.normal, i.tangent.xyz) * i.tangent.w;
+                    i.normal = normalize(baseNormal.x * i.tangent + baseNormal.y * i.normal + baseNormal.z * byNormal);
+
                     //return baseTex * _BaseColor;
                     //light info
                     UnityLight lighting;
