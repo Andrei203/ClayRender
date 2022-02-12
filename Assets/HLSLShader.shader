@@ -82,6 +82,8 @@
                     //return baseTex * _BaseColor;
                     
                     //light info
+
+                    //able to modify smoothness & metallic in the inspector
                     UnityLight lighting;
                     lighting.dir = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.world_position.xyz, _WorldSpaceLightPos0.w));
                     lighting.color = _LightColor0;
@@ -95,7 +97,7 @@
                     float3 diffuse = albedo * lighting.color * DotClamped(lighting.dir, i.normal);
 
                     
-                    //specular shade
+                    //specular shader 
                     
                     //float3 reflectionDir = reflect(-lighting.dir, i.normal);
                     float3 viewDir = normalize(_WorldSpaceCameraPos - i.world_position);
