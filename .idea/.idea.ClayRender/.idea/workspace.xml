@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15630aa7-c159-468d-ae2d-324477bd0308" name="Default Changelist" comment="" />
+    <list default="true" id="15630aa7-c159-468d-ae2d-324477bd0308" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HLSLShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HLSLShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +91,8 @@
       <workItem from="1643904544038" duration="533000" />
       <workItem from="1643905097454" duration="1312000" />
       <workItem from="1644406157628" duration="1193000" />
+      <workItem from="1644444794861" duration="1608000" />
+      <workItem from="1644671190560" duration="3929000" />
     </task>
     <servers />
   </component>
