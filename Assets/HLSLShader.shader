@@ -15,7 +15,10 @@
         {
             Pass 
             { 
-                Tags { "RenderType" = "Opaque" }
+                Tags {
+                     "RenderType" = "Opaque"
+                    "LightMode" = "UniversalForward" 
+                    }
                 LOD 100
 
                 HLSLPROGRAM
@@ -77,7 +80,8 @@
                     //normal map
 
                     float3 byNormal = cross(i.normal, i.tangent.xyz) * i.tangent.w;
-                    i.normal = normalize(baseNormal.x * i.tangent + baseNormal.y * i.normal + baseNormal.z * byNormal);
+                    i.normal = UnityObjectToWorldNormal(i.normal);
+                    //i.normal = normalize(baseNormal.x * i.tangent + baseNormal.y * i.normal + baseNormal.z * byNormal);
                 
                     //return baseTex * _BaseColor;
                     
@@ -85,7 +89,8 @@
 
                     //able to modify smoothness & metallic in the inspector
                     UnityLight lighting;
-                    lighting.dir = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.world_position.xyz, _WorldSpaceLightPos0.w));
+                    lighting.dir = _WorldSpaceLightPos0.xyz;
+                    //lighting.dir = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.world_position.xyz, _WorldSpaceLightPos0.w));
                     lighting.color = _LightColor0;
                     
                     float3 albedo = tex2D(_MainTex, i.uv).rgb * _Tint.rgb;
