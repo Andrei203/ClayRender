@@ -9,6 +9,7 @@
         <e p="Clay.shader" t="Include" />
         <e p="HLSLShader.shader" t="Include" />
         <e p="NewBehaviourScript.cs" t="Include" />
+        <e p="rotatesc.cs" t="Include" />
       </e>
       <e p="ClayRender.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
