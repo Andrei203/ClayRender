@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 1938378932}
   - component: {fileID: 1938378931}
   - component: {fileID: 1938378934}
+  - component: {fileID: 1938378935}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -680,6 +681,21 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1938378935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938378930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9329fb8e491f4584d9a0e545e5705725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flySpeed: 15
+  fastFlySpeed: 30
+  cameraSensitivity: 1
 --- !u!1 &2120918945
 GameObject:
   m_ObjectHideFlags: 0

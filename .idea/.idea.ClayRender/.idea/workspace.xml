@@ -22,12 +22,6 @@
     <list default="true" id="15630aa7-c159-468d-ae2d-324477bd0308" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClayRender/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ClayShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ClayShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Fingerprint_texture.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Fingerprint_texture.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Material 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Material 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +38,7 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/HLSLShader.shader" />
       <option value="$PROJECT_DIR$/Assets/rotatesc.cs" />
+      <option value="$PROJECT_DIR$/Assets/FlyingCameraController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="220sxLo2xEG3McUkgrp1xdbAxRm" />
@@ -104,6 +99,7 @@
       <workItem from="1645037912833" duration="1198000" />
       <workItem from="1645108356733" duration="3771000" />
       <workItem from="1647966836868" duration="652000" />
+      <workItem from="1649157721431" duration="79000" />
     </task>
     <servers />
   </component>
